@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env ash
 set -x
 
 # Copy all environment variables which start with INPUT_, GITHUB_, RUNNER_ or ACTIONS_
