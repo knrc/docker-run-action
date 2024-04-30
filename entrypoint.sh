@@ -29,3 +29,4 @@ if [ -n "${RUNNER_TOOL_CACHE}" ] ; then
 fi
 
 echo exec docker run --workdir "${GITHUB_WORKSPACE}" -it --rm ${vars} ${mounts} "${INPUT_IMAGE}"
+exec docker run --workdir "${GITHUB_WORKSPACE}" -it --rm ${vars} ${mounts} "${INPUT_IMAGE}"
