@@ -28,5 +28,5 @@ if [ -n "${RUNNER_TOOL_CACHE}" ] ; then
   mounts="${mounts} -v ${RUNNER_TOOL_CACHE}:${RUNNER_TOOL_CACHE}"
 fi
 
-echo exec docker run --workdir "${GITHUB_WORKSPACE}" -it --rm ${vars} ${mounts} "${INPUT_IMAGE}"
-exec docker run --workdir "${GITHUB_WORKSPACE}" -it --rm ${vars} ${mounts} "${INPUT_IMAGE}"
+echo exec docker run --workdir "${GITHUB_WORKSPACE}" --rm ${vars} ${mounts} "${INPUT_IMAGE}"
+exec docker run --workdir "${GITHUB_WORKSPACE}" --rm ${vars} ${mounts} "${INPUT_IMAGE}"
