@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -x
 
 # Copy all environment variables which start with INPUT_, GITHUB_, RUNNER_ or ACTIONS_
 # Also set HOME and CI
